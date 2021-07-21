@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .p-banner {
+        width: 100%;
+    }
+    
+    
+    .banner {
+        height: auto;
+    }
+    .banner .container {
+        padding: 20px 1
+        0px;
+    }
+    .banner .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .bannerForm {
+        width:  500px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .cli .grid{
+        display: block;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr; */
+        /* width: 80%; */
+        
+    }
+
+    .cli .grid .card{
+      margin: 20px;
+        
+    }
+
+    .cloud .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cloud {
+        text-align: center;
+        height: auto;
+    }
+
+    .cloud-text h2 {
+        margin-top: 50px;
+
+    }
+
+    .cloud-img img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-logos  {
+        margin: 40px 0;
+    }
+
+    @keyframes anim {
+        0% {
+            transform: translatey(100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translatey(0);
+            opacity: 1;
+        }
+}
+.f-grid .grid{
+    display: block;
+    }
+
+.f-grid .card{
+    padding: 20px;
+    margin: 20px;
+    }
+
+    .features-banner .container.flex {
+        flex-direction: column;
+        text-align: center;
+}
+.features-banner .container.flex img {
+    width: 200px;
+    padding: 0 0 28px 0;
+}
+
+.loruki-banner .container.flex {
+    flex-direction: column;
+    text-align: center;
+}
+.docs .container.grid {
+
+    display: block;
+}
+.bannerText {
+    position: relative;
+    left: 0;
+}
+}

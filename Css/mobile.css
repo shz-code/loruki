@@ -1,0 +1,63 @@
+@media (max-width : 500px){
+    header .container.flex {
+        flex-direction: column;
+    }
+    .container {
+        padding: 0 10px;
+    }
+
+    header  {
+       height: 110px;
+    }
+
+    header h3 {
+        padding-top: 10px;
+    }
+    
+    header nav {
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    
+    header .container nav ul li a{
+        
+        margin: 5px 0;
+        padding: 0 10px;
+ 
+    }
+    .banner h1 {
+        font-size: 2rem;
+    }
+    
+    .bannerForm {
+        max-width: 400px;
+        width:  100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .bannerText {
+    position: relative;
+    left: 0;
+}
+.bannerForm {
+padding: 20px;
+height: auto;
+}
+    .features-banner h3 {
+        font-size: 2rem;
+        font-weight: 100;
+}
+    .features-banner .container.flex img {
+        width: 150px;
+    }
+    .loruki-banner .container.flex img{
+        width: 150px;
+    }
+    .f-grid .card {
+        margin: 20px 0px;
+    }
+    .f-grid .container .card{
+        display: block;
+    }
+
+}

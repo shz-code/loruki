@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #047aed;;
+    --primary-color-faded: #8585858c;;
+    --light-color: #f4f4f4
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* overflow: hidden; */
+}
+
+
+
+/* header */
+
+header {
+    height: 100px;
+    width: 100%;
+    /* height: 80px; */
+    background: var(--primary-color);
+}
+
+header .container .logo {
+    font-size: 2em;
+    /* padding: 10px 20px; */
+    color: white;
+    position: relative;
+    /* right: 13px; */
+}
+
+header .container.flex {
+    justify-content: space-between;
+}
+
+
+header .container nav ul li{
+    list-style: none;
+}
+
+header .container nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 5px 20px;
+}
+
+header .container nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+/* header  */
+
+/* banner */
+
+.banner::before,
+.banner::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0%;
+   bottom: -70px;
+   height: 100px;
+   background: white;
+   transform: skewY(-3deg);
+   -webkit-transform: skewY(-3deg);
+   -moz-transform: skewY(-3deg);
+   -ms-transform: skewY(-3deg);
+}
+
+.banner {
+    /* padding-top: 100px; */
+    height: 400px;
+    background: var(--primary-color);
+    color: white;
+    position: relative;
+}
+
+.bannerText {
+    position: relative;
+    left: 13px;
+}
+
+.banner h1{
+    font-size: 40px ;
+    
+}
+
+.banner p{
+    line-height: 1.7;
+    margin: 20px 0;
+    /* width: 80%; */
+    
+}
+
+.banner .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+    /* justify-content: space-between; */
+}
+
+.bannerForm {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    max-width: 380px;
+    padding: 40px;
+    z-index: 100;
+    animation: anim 1s linear;
+}
+
+@keyframes anim {
+    0% {
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.bannerForm .formControl{
+  margin: 30px 0;
+  width: 100%;
+}
+
+.bannerForm input[type='text'],
+.bannerForm input[type='email']
+{
+ border: 0;
+ border-bottom: 1px solid #b4becb;
+ width: 100%;
+ padding: 3px;
+ font-size: 16px;
+ outline: none;
+}
+
+.bannerForm input[type='text']:focus,
+.bannerForm input[type='email']:focus
+{
+border-bottom: 1px solid var(--primary-color);
+}
+
+/* banner  */
+
+/* stats */
+
+.stats .container {
+    /* position: relative; */
+   padding-top: 100px;
+}
+
+.statsHeading {
+    max-width: 500px;
+    margin:  auto;
+}
+.stats .grid h3 {
+    font-size: 35px;
+}
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* stats */
+
+/* cli */
+
+.cli-text{
+    height: 100px;
+    background: rgb(26, 21, 73);
+    color: white;
+}
+
+.cli-text.card{
+    border-radius: 5px;
+}
+
+.cli-text span{ 
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(236, 142, 53);
+    top: 10%;
+    left: 3%;
+    border-radius: 50%;
+}
+
+.cli-text span::before{ 
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 15px;
+    border-radius: 50%;
+    background: rgb(215, 218, 79);
+    box-shadow: 15px  0px 0px rgb(82, 209, 82);
+}
+
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.cli .grid > *:first-child{
+   grid-column: 1 / span 2;
+   grid-row: 1 / span 2;
+}
+
+/* cli  */
+
+/* cloud  */
+
+.cloud{
+    height: 400px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.cloud .container{
+    overflow: hidden;
+}
+
+.cloud .grid{
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+}
+
+
+.cloud-text h2 {
+    font-size: 50px;
+}
+
+.cloud-text p {
+    font-size: 20px;
+    
+}
+
+.cloud-text a{
+    background:  rgb(26, 21, 73);
+    
+}
+
+.cloud-img img{
+    width: 400px;
+    height: auto;
+}
+
+/* cloud  */
+
+/* languages */
+
+.languages img {
+    width: 100px;
+    
+}
+
+.languages h2 {
+   font-size: 40px;
+   margin: 25px 0;
+    
+}
+
+.languages .card {
+    height: 200px;
+    margin: 20px 15px;
+    transition: 0.2s ease;
+}
+
+.languages .card:hover  {
+ transform: translatey(-20px);   
+}
+
+/* .languages  */
+
+/* footer  */
+
+footer  {
+    margin-top: 20px;
+    
+}
+footer li {
+    list-style: none;
+    padding: 5px;
+    
+}
+footer a {
+    color: white;
+    
+}
+.social-logos a {
+    margin: 0 8px;
+}
+
+/* features  */
+/* page start  */
+
+/* banner  */
+.features-banner h3 {
+        font-size: 4rem;
+        font-weight: 100;
+}
+
+
+
+.features-banner .container.flex {
+        justify-content: space-between;
+}
+
+.features-banner .container.flex img {
+    max-width: 250px;
+    object-fit: contain;    
+    width: 100%;
+}
+
+.loruki-banner {
+    background:var(--light-color);
+}
+
+.loruki-banner h3{
+    font-size: 2rem;
+        font-weight: 100;
+}
+
+.loruki-banner p{
+    line-height: 1.2;
+}
+
+.loruki-banner .container.flex{
+   justify-content: space-between;
+}
+
+.loruki-banner .container.flex img{
+    width: 300px;
+}
+
+/* features */
+/* grid  */
+
+.f-grid .container{
+    margin-top: 20px;
+overflow: visible;
+}
+
+.f-grid .card{
+    padding: 0 10px;
+}
+
+.f-grid .grid div:nth-child(1) {
+grid-column: 1 / span 3;
+}
+
+.f-grid .grid div:nth-child(2) {
+grid-column: 1 / span 2;
+}
+
+.f-grid .grid .flex{
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+.f-grid .grid .flex i{
+  margin: 0 10px;
+}
+
+.f-grid .grid .flex p{
+    text-align: left;
+   width: 100%;
+}
+
+/* features  */
+/* page end  */
+
+/* docs  */
+/* page start  */
+
+.docs {
+    margin: 40px 0;
+}
+
+.docs .container.grid {
+    grid-template-columns: 1fr 2fr;
+}
+
+.docs h1 {
+    font-weight: 900;
+    margin: 20px 0;
+}
+.docs .menu {
+    /* width: 250px; */
+    padding: 40px ;
+    align-self: flex-start;
+    background: var(--light-color);
+   
+}
+
+.docs .tut .icon i{
+   margin: 0 10px;
+   
+}
+
+.docs .tut .card{
+   background-color: #002240;
+   color: white;
+   padding: 15px;
+   border-radius: 5px;
+   box-shadow: none;
+   right: 10px;
+   
+}
+.docs .tut .icon {
+   width: 100%;
+   border-radius: 5px;
+   color: white;
+   background-color: #5cb85c;
+   padding: 0 10px;
+   
+}
+.docs .tut .icon .fas{
+   margin-right: 10px;
+   
+}
+
+.docs .tut .icon p{
+   font-weight: bold;
+   
+}
+
+.docs .tut .icon.flex{
+   justify-content: flex-start;
+   
+}
+
+.docs .menu p {
+   padding: 5px 0;
+   border-bottom: 1px solid var(--primary-color-faded);
+}
